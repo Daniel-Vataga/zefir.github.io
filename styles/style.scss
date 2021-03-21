@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    // height: 100%;
+    // overflow: hidden;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    color: #282828;
+    font-family: 'Helvetica-Neue';
+
+}
+
+a {
+    text-decoration: none;
+}
+
+$yell: #FFD600;
+$grey: #6F6F6F;
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+
+    button {
+        font-family: 'Helvetica-Neue-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .logIn {
+        background: none;
+        border: none;
+    }
+
+    .mobileMenu {
+        display: none;
+        overflow: hidden;
+
+        .hidden-menu-ticker {
+            display: none;
+        }
+
+        .icon,
+        .menuIcon {
+            max-width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .btnMenu {
+            position: relative;
+            z-index: 3;
+        }
+
+        .hiddenMenu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            height: 100%;
+            top: -130%;
+            left: 0;
+            transition: top .3s linear;
+            z-index: 2;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+
+            button {
+                font-size: 25px;
+            }
+
+            .hiddenSignUpBlock {
+                position: relative;
+                margin-top: 35px;
+
+                .signUpHidden {
+                    background: none;
+                    border: 1px solid #000;
+                    outline: none;
+                    padding: 13px 20px;
+                    // margin-top: 20px;
+                    position: relative;
+                    z-index: 2;
+
+                    &:hover+.headBackdrop {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .headBackdrop {
+                    background-color: $yell;
+                    width: 142px;
+                    height: 49px;
+                    position: absolute;
+                    transition: all .2s linear;
+                    position: absolute;
+                    top: 7px;
+                    left: 7px;
+                    // transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+            }
+
+
+        }
+    }
+
+    .hidden-menu-ticker:checked~.hiddenMenu {
+        top: 0;
+    }
+
+    .signBlock {
+        display: flex;
+        position: relative;
+
+        button {
+            font-family: 'Helvetica-Neue-Medium';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+
+        .headBackdrop {
+            background: $yell;
+            width: 117px;
+            height: 44px;
+            position: absolute;
+            right: -7px;
+            top: 7px;
+            transition: all .2s linear;
+
+        }
+
+        .signUp {
+            padding: 10px 22px;
+            background: none;
+            border: 1px solid #000;
+            padding: 10px 22px;
+            z-index: 1;
+            margin-left: 50px;
+
+            &:hover+.headBackdrop {
+                right: 0;
+                top: 0;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+
+.content {
+    padding: 0 20px;
+    // height: 90%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+
+    .circle {
+        max-width: 690px;
+        // width: 690px;
+        height: 690px;
+        margin: 0 auto;
+        margin-top: 80px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px -80px 100px rgba(255, 214, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-family: 'Helvetica-Neue-Bold';
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 80px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            width: 850px;
+            position: relative;
+            left: 51%;
+            transform: translateX(-50%);
+        }
+
+        .connectBlock {
+            max-width: 415px;
+            margin: 0 auto;
+
+            p {
+                font-family: 'Helvetica-Neue-Medium';
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 0.11em;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .notifyInput {
+                    border: 1px solid #282828;
+                    border-right: none;
+
+                    padding: 13px 12px;
+                    width: 100%;
+
+
+                    &::placeholder {
+                        font-family: 'Helvetica-Neue';
+                        color: $grey;
+                        font-size: 16px;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .notifyBtn {
+                    font-family: 'Helvetica-Neue-Medium';
+                    background: none;
+                    outline: none;
+                    border: 1px solid #000;
+                    padding: 13px 30px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.05em;
+                    cursor: pointer;
+                    z-index: 1;
+
+                    &:hover+.connectBackdrop {
+                        top: 0;
+                        right: 0;
+                    }
+                }
+
+                .connectBackdrop {
+                    background-color: $yell;
+                    position: absolute;
+                    width: 140px;
+                    height: 48px;
+                    top: 7px;
+                    right: -7px;
+                    transition: all .2s linear;
+
+
+                }
+
+
+            }
+        }
+    }
+
+    .iconBlock {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 55px;
+        margin-top: -40px;
+
+        .telegramIcon {
+            width: 35px;
+            height: 35px;
+            fill: #282828;
+            cursor: pointer;
+        }
+    }
+}
