@@ -9,6 +9,12 @@ body {
   padding: 0;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body,
 input,
 button,
@@ -100,8 +106,6 @@ textarea {
   -webkit-transition: top .3s linear;
   transition: top .3s linear;
   z-index: 2;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
 }
 
 .heading .mobileMenu .hiddenMenu button {
@@ -138,6 +142,10 @@ textarea {
   top: 7px;
   left: 7px;
   z-index: 1;
+}
+
+.heading .hidden-menu-ticker:checked + body {
+  overflow: hidden;
 }
 
 .heading .hidden-menu-ticker:checked ~ .hiddenMenu {
