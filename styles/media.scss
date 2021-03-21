@@ -24,6 +24,7 @@
         .circle {
             max-width: 550px;
             height: 550px;
+            padding-bottom: 0;
 
             .title {
                 font-size: 60px;
@@ -85,6 +86,12 @@
             margin-top: 65px;
             max-width: 430px;
             height: 430px;
+
+            .connectBlock {
+                p {
+                    font-size: 22px;
+                }
+            }
         }
 
         .iconBlock {
@@ -100,6 +107,11 @@
             max-width: 370px;
             height: 370px;
 
+            .connectBlock {
+                p {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
