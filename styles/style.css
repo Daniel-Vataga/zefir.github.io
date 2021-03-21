@@ -18,16 +18,9 @@ textarea {
   font-family: 'Helvetica-Neue';
 }
 
-a {
-  text-decoration: none;
-}
-
-.wrapper {
+.heading {
   max-width: 1600px;
   margin: 0 auto;
-}
-
-.heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +31,14 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 20px;
+}
+
+.heading .logoBlock {
+  width: 135px;
+}
+
+.heading .logoBlock .logo {
+  width: 100%;
 }
 
 .heading button {
@@ -162,7 +163,7 @@ a {
 
 .heading .signBlock .headBackdrop {
   background: #FFD600;
-  width: 117px;
+  width: 118px;
   height: 44px;
   position: absolute;
   right: -7px;
@@ -186,7 +187,8 @@ a {
 }
 
 .content {
-  padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .content .circle {
@@ -327,5 +329,52 @@ a {
   height: 35px;
   fill: #282828;
   cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  background-color: #F4F4F4;
+  padding: 50px 20px 40px;
+}
+
+.footer .footerContent {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-top: 2px solid #8c8c8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 0;
+}
+
+.footer .footerContent .footerCopyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Helvetica-Neue';
+}
+
+.footer .footerContent .footerCopyright p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+
+.footer .footerContent .footerCopyright .copyright {
+  margin-right: 45px;
+}
+
+.footer .footerContent .footerIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.footer .footerContent .footerIcon svg {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

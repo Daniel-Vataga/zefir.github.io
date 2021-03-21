@@ -12,13 +12,21 @@
 </head>
 
 <body>
+    <!-- Обертка -->
     <div class="wrapper">
+
+        <!-- Секция логотипа и кнопок -->
         <div class="heading">
+
+            <!-- Блок с логотипом -->
             <div class="logoBlock">
-                <img src="assets/logo.png" alt="Logo">
+                <img class="logo" src="assets/logo.png" alt="Logo">
             </div>
+
+            <!--Меню для телефонов -->
             <div class="mobileMenu">
 
+                <!-- Иконки мобильного меню -->
                 <input type="checkbox" id="hmt" class="hidden-menu-ticker">
                 <label for="hmt" class="btnMenu">
                     <svg class="menuIcon">
@@ -26,6 +34,7 @@
                     </svg>
                 </label>
 
+                <!-- Скрытое выпадающее меню -->
                 <div class="hiddenMenu">
                     <button class="logIn">Log&nbsp;In</button>
                     <div class="hiddenSignUpBlock">
@@ -35,6 +44,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Блок с двумя кнопками для входа и регистрации -->
             <div class="signBlock">
                 <button class="logIn">Log&nbsp;In</button>
                 <button class="signUp">Sign&nbsp;Up</button>
@@ -42,13 +53,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Секция основного контента -->
         <div class="content">
+
+            <!-- Круг с тенью в котором лежит контент -->
             <div class="circle">
-                <!-- <div class="titleBlock"> -->
                 <h1 class="title">coming soon</h1>
 
-                <!-- </div> -->
-
+                <!-- Блок для отправки письма -->
                 <div class="connectBlock">
                     <p>Get notified when it's ready</p>
                     <form>
@@ -57,18 +70,37 @@
                         <div class="connectBackdrop">
                         </div>
                     </form>
-
                 </div>
             </div>
+
+            <!-- Блок с иконкой телеграма -->
             <div class="iconBlock">
                 <svg class="telegramIcon">
                     <use xlink:href="assets/sprite.svg#telegram-icon"></use>
                 </svg>
             </div>
         </div>
-        <!-- <div class="footer">
-            
-        </div> -->
+
+        <!-- Футер обертка -->
+        <div class="footer">
+
+            <!-- Контент -->
+            <div class="footerContent">
+
+                <!-- Текст -->
+                <div class="footerCopyright">
+                    <p class="copyright">copyright © 2021 zefir</p>
+                    <p class="madeBy">site by maxk design</p>
+                </div>
+
+                <!-- Иконка -->
+                <div class="footerIcon">
+                    <svg class="telegramIcon">
+                        <use xlink:href="assets/sprite.svg#telegram-icon"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
