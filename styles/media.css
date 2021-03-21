@@ -20,6 +20,7 @@
   .content .circle {
     max-width: 550px;
     height: 550px;
+    padding-bottom: 0;
   }
   .content .circle .title {
     font-size: 60px;
@@ -69,6 +70,9 @@
     max-width: 430px;
     height: 430px;
   }
+  .content .circle .connectBlock p {
+    font-size: 22px;
+  }
   .content .iconBlock {
     margin-top: 50px;
     -webkit-box-pack: center;
@@ -81,6 +85,9 @@
   .content .circle {
     max-width: 370px;
     height: 370px;
+  }
+  .content .circle .connectBlock p {
+    font-size: 20px;
   }
 }
 
