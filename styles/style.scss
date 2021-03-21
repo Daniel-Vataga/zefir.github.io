@@ -1,5 +1,3 @@
-// СБРОС СТИЛЕЙ
-
 * {
     box-sizing: border-box;
 }
@@ -13,7 +11,7 @@ body {
 html,
 body,
 #root {
-    // height: 100%;
+    height: 100%;
     // overflow: hidden;
 }
 
@@ -100,8 +98,8 @@ $grey: #6F6F6F;
             left: 0;
             transition: top .3s linear;
             z-index: 2;
-            -webkit-transform: translateZ(0);
-            -webkit-backface-visibility: hidden;
+            // -webkit-transform: translateZ(0);
+            // -webkit-backface-visibility: hidden;
 
             button {
                 font-size: 25px;
@@ -142,6 +140,10 @@ $grey: #6F6F6F;
 
 
         }
+    }
+
+    .hidden-menu-ticker:checked+body {
+        overflow: hidden;
     }
 
     .hidden-menu-ticker:checked~.hiddenMenu {
